@@ -1,0 +1,208 @@
+/* BASIC HTML CONFIGURATION */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  color: #52bb52;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 1.25rem;
+  text-rendering: optimizeLegibility; }
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto; }
+
+/* HEADER - BACKGROUNDIMAGE */
+header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/wenzhou.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), url(img/wenzhou.jpg));
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+  width: auto; }
+
+/* HEADINGS */
+h1 {
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  word-spacing: 3px; }
+
+h2 {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px; }
+
+h2::after {
+  display: block;
+  height: 2px;
+  background-color: #2ecc71;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px; }
+
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 110%;
+  margin-bottom: 15px;
+  text-align: center; }
+
+/* BUTTON CONFIGURATION */
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.button-ghost:link,
+.button-ghost:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  margin-bottom: 1rem;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  color: white;
+  border: 1px solid #2ecc71; }
+
+.button-ghost:hover,
+.button-ghost:active {
+  color: #2ecc71; }
+
+/* NAVIGATIONBAR */
+.main-nav {
+  float: right;
+  list-style: none; }
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+  margin-top: 30px; }
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent; }
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #2ecc71; }
+
+/* ABOUT WENZHOU SECTION*/
+.main-content {
+  color: black;
+  background-color: #ecf0f1; }
+
+.temple-logo {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 100%;
+  height: auto; }
+
+.long-copy {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%; }
+
+.box {
+  padding: 3%; }
+
+.box p {
+  font-size: 90%;
+  line-height: 145%;
+  text-align: center; }
+
+/* PICTURES SECTION */
+.travelling-pics {
+  list-style: none;
+  width: 100%; }
+
+.travelling-pics li {
+  display: block;
+  float: left;
+  width: 25%; }
+
+.photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: black; }
+
+.photo img {
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s; }
+
+.photo img:hover {
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03); }
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+  .hero-text-box {
+    width: auto;
+    padding: 0 2%; }
+  .row {
+    padding: 0 2%; }
+  .temple-logo {
+    display: block;
+    margin: 30px auto;
+    width: 100%;
+    height: auto; } }
+
+/* Small phones to small tablets: from 481 to 767px */
+@media only screen and (max-width: 767px) {
+  .hero-text-box {
+    width: auto;
+    padding: 0 2%; }
+  .row {
+    padding: 0 2%; }
+  .temple-logo {
+    display: block;
+    margin: 30px auto;
+    width: 100%;
+    height: auto; } }
+
+/* Small tablets to big tablets: from 768 to 1023 px */
+@media only screen and (max-width: 1023px) {
+  body {
+    font-size: 18px; } }
+
+/* Big tablets to 1200 px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+  .hero-text-box {
+    width: auto;
+    padding: 0 2%; }
+  .row {
+    padding: 0 2%; }
+  .temple-logo {
+    display: block;
+    margin: 30px auto;
+    width: 100%;
+    height: auto; } }
